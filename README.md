@@ -12,7 +12,7 @@ We support three different groups of labels, namely **Category**, **Interface**,
 Each repository must contain at least one label for each
 group. A list of allowed topics for each group follows:
 
-- **Category**:
+### Category
 <valid-topics-category>
 project,
 drivers,
@@ -22,7 +22,7 @@ visualization,
 plugin
 </valid-topics-category>
 
-- **Interface**:
+### Interface
 <valid-topics-interface>
 native,
 ros,
@@ -30,7 +30,7 @@ ros2,
 lcm
 </valid-topics-interface>
 
-- **Language**:
+### Language
 <valid-topics-language>
 c,
 c++,
