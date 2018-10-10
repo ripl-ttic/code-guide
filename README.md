@@ -5,11 +5,12 @@ Code guidelines and standards for projects and repositories at RIPL
 
 ## Topics for GitHub repositories
 
-It is important to label all the repositories so that we can keep track of what functionalities each repo provides.
-It is also important to respect a labelling standard. On GitHub, a label is a **topic** that gets assigned to a repository (read the [official documentation](https://help.github.com/articles/classifying-your-repository-with-topics/) to learn how to assign topics to a repository).
+It is important to label all the repositories so that we can keep track of the functionalities that each repository provides.
+On GitHub, a label is called **topic** and multiple topics can be assigned to a given repository (read the [official documentation](https://help.github.com/articles/classifying-your-repository-with-topics/) to learn how to assign topics to a repository).
 
-We support three different groups of labels, namely **Category**, **Interface**, and **Language**.
-Each repository must contain at least one label for each
+It is very important to respect a labelling standard. 
+We support three different groups of topics, namely **Category**, **Interface**, and **Language**.
+Each repository **MUST** contain at least one label for each
 group. A list of allowed topics for each group follows:
 
 ### Category
@@ -46,7 +47,7 @@ matlab
 
 ### Topics description
 
-A description for each label follows.
+A description for each topic follows.
 
 - **Category**:
     - **project**: Repositories that are the root to a specific project. Such repositories are usually an aggregation of git submodules and are used to facilitate the deployment of an independent project.
