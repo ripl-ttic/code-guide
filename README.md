@@ -73,36 +73,36 @@ The following image shows the hierarchy of Docker images already available on Do
 <details>
 <summary></summary>
 ripl_docker_hierarchy
-    digraph prof {
-        ratio = fill;
-        node [style=rounded];
+digraph prof {
+ ratio = fill;
+ node [style=rounded];
 
-        ubuntu -> lcm;
-        lcm -> lcm_ros;
-        lcm -> libbot2;
-        libbot2 -> libbot2_ros;
+ ubuntu -> lcm;
+ lcm -> lcm_ros;
+ lcm -> libbot2;
+ libbot2 -> libbot2_ros;
 
-        ubuntu [label="ubuntu:16.04"];
-        lcm[ \
-            label="afdaniele/lcm:1.4.0 \n\n \
-            GitHub: ripl-ttic/lcm-docker \n \
-            DockerHub: afdaniele/lcm" \
-        ];
-        lcm_ros[ \
-            label="afdaniele/lcm-ros:latest \n\n \
-            GitHub: ripl-ttic/lcm-ros-docker \n \
-            DockerHub: afdaniele/lcm-ros" \
-        ];
-        libbot2[ \
-            label="afdaniele/libbot2:latest \n\n \
-            GitHub: ripl-ttic/libbot2-docker \n \
-            DockerHub: afdaniele/libbot2" \
-        ];
-        libbot2_ros[ \
-            label="afdaniele/libbot2-ros:latest \n\n \
-            GitHub: ripl-ttic/libbot2-ros-docker \n \
-            DockerHub: afdaniele/libbot2-ros" \
-        ];
-    }
+ ubuntu [label="ubuntu:16.04"];
+ lcm[ \
+  label="afdaniele/lcm:1.4.0 \n\n \
+  GitHub: ripl-ttic/lcm-docker \n \
+  DockerHub: afdaniele/lcm" \
+ ];
+ lcm_ros[ \
+  label="afdaniele/lcm-ros:latest \n\n \
+  GitHub: ripl-ttic/lcm-ros-docker \n \
+  DockerHub: afdaniele/lcm-ros" \
+ ];
+ libbot2[ \
+  label="afdaniele/libbot2:latest \n\n \
+  GitHub: ripl-ttic/libbot2-docker \n \
+  DockerHub: afdaniele/libbot2" \
+ ];
+ libbot2_ros[ \
+  label="afdaniele/libbot2-ros:latest \n\n \
+  GitHub: ripl-ttic/libbot2-ros-docker \n \
+  DockerHub: afdaniele/libbot2-ros" \
+ ];
+}
 ripl_docker_hierarchy
 </details>
