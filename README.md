@@ -67,7 +67,7 @@ A description for each topic follows.
 ## Docker images
 
 There are 4 Docker images that you can use as a base for your module or project.
-The following image shows the hierarchy of Docker images already available on Docker Hub.
+The following figure shows the hierarchy of Docker images already available on Docker Hub.
 
 ![Docker images hierarchy](https://g.gravizo.com/source/ripl_docker_hierarchy?https%3A%2F%2Fraw.githubusercontent.com%2Fripl-ttic%2Fcode-guide%2Fmaster%2FREADME.md)
 <details>
