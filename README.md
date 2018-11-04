@@ -8,7 +8,7 @@ Code guidelines and standards for projects and repositories at RIPL
 It is important to label all the repositories so that we can keep track of the functionalities that each repository provides.
 On GitHub, a label is called **topic** and multiple topics can be assigned to a given repository (read the [official documentation](https://help.github.com/articles/classifying-your-repository-with-topics/) to learn how to assign topics to a repository).
 
-It is very important to respect a labelling standard. 
+It is very important to respect a labelling standard.
 We support three different groups of topics, namely **Category**, **Interface**, and **Language**.
 Each repository **MUST** contain at least one label for each
 group. A list of allowed topics for each group follows:
@@ -62,3 +62,47 @@ A description for each topic follows.
     - **ros**: Indicates that the software component contained in the repository supports inter-process communication via the [ROS](http://www.ros.org) protocol.
     - **ros2**: Indicates that the software component contained in the repository supports inter-process communication via the [ROS2](http://www.ros2.org) protocol.
     - **lcm**: Indicates that the software component contained in the repository supports inter-process communication via the [LCM](https://lcm-proj.github.io) protocol.
+
+
+## Docker images
+
+There are 4 Docker images that you can use as a base for your module or project.
+The following image shows the hierarchy of Docker images already available on Docker Hub.
+
+![Docker images hierarchy](https://g.gravizo.com/source/ripl_docker_hierarchy?https%3A%2F%2Fraw.githubusercontent.com%2Fripl-ttic%2Fcode-guide%2Fmaster%2FREADME.md)
+<details>
+<summary></summary>
+ripl_docker_hierarchy
+    digraph prof {
+      ratio = fill;
+      node [style=rounded];
+
+      ubuntu -> lcm;
+      lcm -> lcm_ros;
+      lcm -> libbot2;
+      libbot2 -> libbot2_ros;
+
+    ubuntu [label="ubuntu:16.04"];
+    lcm[ \
+      label="afdaniele/lcm:1.4.0 \n\n \
+      GitHub: ripl-ttic/lcm-docker \n \
+      DockerHub: afdaniele/lcm" \
+    ];
+    lcm_ros[ \
+      label="afdaniele/lcm-ros:latest \n\n \
+      GitHub: ripl-ttic/lcm-ros-docker \n \
+      DockerHub: afdaniele/lcm-ros" \
+    ];
+    libbot2[ \
+      label="afdaniele/libbot2:latest \n\n \
+      GitHub: ripl-ttic/libbot2-docker \n \
+      DockerHub: afdaniele/libbot2" \
+    ];
+    libbot2_ros[ \
+      label="afdaniele/libbot2-ros:latest \n\n \
+      GitHub: ripl-ttic/libbot2-ros-docker \n \
+      DockerHub: afdaniele/libbot2-ros" \
+    ];
+    }
+ripl_docker_hierarchy
+</details>
