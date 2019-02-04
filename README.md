@@ -81,27 +81,33 @@ digraph prof {
  lcm -> lcm_ros;
  lcm -> libbot2;
  libbot2 -> libbot2_ros;
+ libbot2_ros -> director;
 
  ubuntu [label="ubuntu:16.04"];
  lcm[ \
-  label="afdaniele/lcm:1.4.0 \n\n \
+  label="ripl/lcm:1.4.0 \n\n \
   GitHub: ripl-ttic/lcm-docker \n \
-  DockerHub: afdaniele/lcm" \
+  DockerHub: ripl/lcm" \
  ];
  lcm_ros[ \
-  label="afdaniele/lcm-ros:latest \n\n \
+  label="ripl/lcm-ros:latest \n\n \
   GitHub: ripl-ttic/lcm-ros-docker \n \
-  DockerHub: afdaniele/lcm-ros" \
+  DockerHub: ripl/lcm-ros" \
  ];
  libbot2[ \
-  label="afdaniele/libbot2:latest \n\n \
+  label="ripl/libbot2:latest \n\n \
   GitHub: ripl-ttic/libbot2-docker \n \
-  DockerHub: afdaniele/libbot2" \
+  DockerHub: ripl/libbot2" \
  ];
  libbot2_ros[ \
-  label="afdaniele/libbot2-ros:latest \n\n \
+  label="ripl/libbot2-ros:latest \n\n \
   GitHub: ripl-ttic/libbot2-ros-docker \n \
-  DockerHub: afdaniele/libbot2-ros" \
+  DockerHub: ripl/libbot2-ros" \
+ ];
+ director[ \
+  label="ripl/director:latest \n\n \
+  GitHub: afdaniele/director \n \
+  DockerHub: ripl/director" \
  ];
 }
 ripl_docker_hierarchy
