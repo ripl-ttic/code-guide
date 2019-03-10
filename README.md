@@ -81,7 +81,9 @@ digraph prof {
  lcm -> lcm_ros;
  lcm -> libbot2;
  libbot2 -> libbot2_ros;
- libbot2_ros -> director;
+ libbot2 -> libbot2_pcl;
+ libbot2_ros -> libbot2_pcl_ros;
+ libbot2_pcl_ros -> director;
 
  ubuntu [label="ubuntu:16.04"];
  lcm[ \
@@ -103,6 +105,16 @@ digraph prof {
   label="ripl/libbot2-ros:latest \n\n \
   GitHub: ripl-ttic/libbot2-ros-docker \n \
   DockerHub: ripl/libbot2-ros" \
+ ];
+ libbot2_pcl[ \
+  label="ripl/libbot2-pcl:latest \n\n \
+  GitHub: ripl-ttic/libbot2-pcl-docker \n \
+  DockerHub: ripl/libbot2-pcl" \
+ ];
+ libbot2_pcl_ros[ \
+  label="ripl/libbot2-pcl-ros:latest \n\n \
+  GitHub: ripl-ttic/libbot2-pcl-ros-docker \n \
+  DockerHub: ripl/libbot2-pcl-ros" \
  ];
  director[ \
   label="ripl/director:latest \n\n \
